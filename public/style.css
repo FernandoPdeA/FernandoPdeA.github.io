@@ -1,0 +1,534 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family:  Georgia, Times, 'Times New Roman', serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+.clear {
+  clear: both;
+}
+
+/* Header */
+
+header {
+  background-color: #66206f;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+.color-navbarDropdow {
+  background-color: #f2ecf2;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.75); 
+}
+
+.color-navbarDropdow a:hover {
+  color: #ff9f00;
+  font-size: 18px;
+}
+
+input.form-pesquisar {
+  width: 50%;
+  height: 35px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2ecf2;
+  padding: 0px 20px;
+  font-size: 18px;
+  color: #66206f;
+}
+
+input.form-pesquisar:focus {
+  outline: none;
+} 
+
+ input.form-pesquisar:hover {
+  background-color: #ded2bd;
+} 
+
+
+/* home - main */
+
+div.car-img-overlay {
+  background-color: #66206f;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+img.imagem-home-principal {
+  height: 600px;
+  width: 100%;
+  background-image: url(/public/images/homeOffice.jpg);
+  margin: 90px auto;
+  margin-bottom: 0;
+  background-size: cover ;
+  background-repeat: no-repeat;
+}
+
+h5.card-title {
+  font-family: 'lato';
+  text-align: center;
+  background-color: rgba(0,0,0,0.70);
+  width: 100%;
+  z-index: 2;
+  color: #ff9f00;
+  font-size: 50px;
+  margin-top: 200px;
+  padding: 20px 2%;
+}
+
+small.small-developer {
+  text-align: center;
+  color: #66206f;
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+strong.strong-developer {
+  text-align: center;
+  color: #ff9f00;
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+div.div-card-texto {
+  text-align: center;
+  background-color: rgba(0,0,0,0.80); ;
+  color: white;
+  z-index: 2;
+  font-size: 18px;
+  padding: 20px 2%;
+  width: 80%;
+  margin: 0 auto;
+}
+
+button.botao-titulo-card {
+  background-color: rgba(40, 167, 69, 0.20);
+  font-size: 16px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  transition: 0.5s;
+}
+a.a-botao-titulo-card {
+  text-decoration: none;
+  color: white;
+}
+
+button.botao-titulo-card:hover {
+  font-size: 17px;
+  background-color: #28a745;
+  transition-timing-function: ease-in-out;
+
+}
+
+div.divisoria {
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  background-color: rgba(0,0,0,0.10);
+}
+div.divisoria h1 {
+  color: gray;
+  font-size: 30px;
+}
+
+
+a.controles-troca-foto-carousel {
+  z-index: 0;
+  height: 50px;
+  width: 50px;
+  background-color: #66206f;
+  margin-top: 55%;
+  border-radius: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* alguns de nossos sites carousel slider */
+
+.div-imagem-slide {
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  padding: 50px 5.5%;
+}
+
+img.imagem-slide {
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  padding: 50px 5.5%;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.75);
+}
+
+/* conecte seus interesses */
+
+.section-header {
+  text-align: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.quadradinhos-imagem-texto {
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  padding: 20px 10px;
+  text-align: center;
+  color: black;
+  font-size: 15px;
+  transition: all 0.5s;
+}
+
+.titulo-quadradinhos {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+  transition: 0.8s;
+}
+
+.titulo-quadradinhos a {
+  transition: 0.4s;
+}
+.titulo-quadradinhos a:hover {
+  color: #ff9f00;
+  transition-timing-function: ease-in-out;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.quadradinhos-imagem-texto:hover {
+  background-color: #66206f;
+  color: white;
+  transition-timing-function: ease-in-out;
+  border-radius: 5px;
+  border: 1px solid #66206f;
+  -webkit-filter: drop-shadow(15px 7px 1px rgba(0,0,0,.5));
+  filter: drop-shadow(15px 7px 1px rgba(0,0,0,.5));
+  transform: scale(1.05);
+}
+
+/* outros modelos de sites */
+
+section.portfolio-section {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.sites-portfolio {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.sites-portfolio-div {
+  width: 100%;
+}
+
+.sites-portfolio-div-fotos {
+  border: 1px solid #66206f;
+  margin-bottom: 50px;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.75);
+}
+
+.sites-portfolio-div-fotos img{
+  width: 100%;
+}
+
+.titulo-modelo-site {
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.titulo-modelo-site a {
+  width: 100%;
+  font-size: 30px;
+  color: #ff9f00;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.titulo-modelo-site a:hover {
+  padding: 5px 5px;
+  background-color: #66206f;
+  color: white;
+  transition-timing-function: ease-in-out;
+  border-radius: 5px;
+}
+
+.comentario-titulo-modelo-site {
+  padding: 0 10px;
+  text-align: center;
+  margin-top: 10px;
+  transition: 0.5s;
+  margin-bottom: 50px;
+}
+
+/* formulario */
+
+section.formulario-contato {
+  background-color: #f6f6f6;
+  width: 100%;
+  padding: 20px 0;
+  height: 100%;
+}
+
+form.formulario-contato-form {
+  border-radius: 5px;
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px 2%;
+  border: 1px solid black;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  background-color: rgb(255, 255, 255);
+}
+
+h1.chamada-formulario-contato {
+  margin-top: 110px;
+  text-align: center;
+  color: gray;
+}
+
+form.formulario-contato-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid rgb(153, 152, 152);
+  border-radius: 5px;
+  margin-bottom: 30px;
+  outline: none;
+}
+
+form.formulario-contato-form label {
+  font-size: 20px;
+  color: gray;
+  margin-bottom: 2px;
+}
+ form.formulario-contato-form textarea {
+  outline: none;
+  padding-left: 10px;
+  padding-top: 5px;
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 5px;
+ }
+
+#estado {
+  width: 80px;
+  margin-left: 5px;
+}
+
+.estado {
+  margin-left: 10px;
+}
+
+#data {
+  width: 200px;
+ margin-left: 5px;
+}
+
+ label.mensagem-text-area {
+ width: 100%;
+ text-align: center;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ }
+
+ input.botao-formulario-contato {
+  transition: 0.5s;
+ }
+
+ input.botao-formulario-contato:hover {
+  transition-timing-function: ease-in-out;
+  font-size: 16px;
+  background-color: #1cbd41;
+ }
+
+ .formulario-contato-form input[type='text']:hover {
+  background-color: #f4eff4;
+ }
+
+.formulario-contato-form input[type='email']:hover {
+  background-color: #f4eff4;
+ }
+
+.formulario-contato-form input[type='date']:hover {
+  background-color: #f4eff4;
+ }
+
+.formulario-contato-form textarea:hover {
+  background-color: #f4eff4;
+ }
+
+
+
+/* modal do formulário de contato */
+
+.modal {
+  display: block;
+  margin-top: 100px;
+  background-color: white;
+}
+
+button.botaoEnviarModal {
+  width: 100%;
+}
+
+
+/* Footer */
+
+footer {
+  background-color: #66206f;
+  width: 100%;
+  bottom: 0;
+}
+
+div.NandoDev {
+  float: left;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+ul.ul-icones {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+li.li-icones {
+  float: right;
+  padding: 50px 5px;
+}
+
+a.a-icones {
+  text-decoration: none;
+  color: white;
+  margin-right: 10px;
+}
+
+a.a-icones:hover {
+  color: #ff9f00;
+}
+
+
+/* página sobre */
+
+h5.card-title-sobre {
+  text-align: center;
+  z-index: 2;
+  color: gray;
+  font-size: 25px;
+  margin-top: 200px;
+  padding: 20px 2%;
+}
+
+div.div-card-texto-sobre {
+  text-align: center;
+  color: white;
+  z-index: 2;
+  font-size: 18px;
+  padding: 20px 2%;
+}
+
+
+/* media screen */
+
+@media screen and (max-width: 768px) {
+  h5.card-title {
+    font-size: 30px;
+  }
+  div.div-card-texto {
+    width: 400px;
+    font-size: 15px;
+  }
+  h5.card-title {
+    width: 60%;
+  }
+  div.divisoria h1 {
+    font-size: 23px;
+  }
+  h1.widget-title {
+    font-size: 22px;
+  }
+  p.conect-mensagem{
+    font-size: 14px;
+  }
+  div.NandoDev span {
+    font-size: 16px;
+    width: 100%;
+    float: left;
+  }
+  li.li-icones {
+    height: 20px;
+    width: 20px;
+    margin: 20px 20px;
+  }
+  a.a-icones small {
+    margin: 10px -15px ;
+  }
+  div.quadradinhos-imagem-texto {
+    width: 90%;
+    height: 100%;
+    margin: 20px auto;
+  }
+  h4.titulo-modelo-site a {
+    font-size: 20px;
+  }
+  form.formulario-contato-form {
+    width: 90%;
+  }
+  #data {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  form.formulario-contato-form {
+    width: 70%;
+  }
+ }
+
+ @media screen and (max-width: 500px) {
+main.main-formulario-contato {
+  width: 100%;
+}
+section.formulario-contato {
+  width: 100%;
+}
+form.formulario-contato-form {
+  width: 90%;
+}
+h1.chamada-formulario-contato {
+  font-size: 30px;
+}
+input.botao-formulario-contato {
+  font-size: 15px;
+  margin-top: 20px;
+}
+div.div-card-texto {
+  font-size: 15px;
+}
+div.div-card-texto-sobre {
+  font-size: 15px;
+}
+h5.card-title-sobre {
+  font-size: 20px;
+}
+ 
+
+}
