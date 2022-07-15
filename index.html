@@ -72,6 +72,13 @@
 
     <div class="clear"></div>
 
+    <br>
+    <div class="divisoria">
+      <h1>Sobre</h1>
+    </div>
+
+    <div class="clear"></div>
+
     <!-- Sobre mim -->
     <div id="sobre-mim" class="container sobre-mim">
       <div class="row">
@@ -326,29 +333,37 @@
     <!-- formulário -->
     <section class="formulario-contato">
       <h1 class="chamada-formulario-contato">Formulário de Contato</h1>
-      <form class="formulario-contato-form" method="post" id="contato">
+      <form class="formulario-contato-form" id="contato">
         <label for="">Nome completo</label>
-        <input type="text" name="nome" id="nome" placeholder="Nome" value="">
+        <input value="" type="text" name="nome" id="nome" placeholder="Nome">
         <label for="">E-mail</label>
-        <input type="email" name="email" id="email" placeholder="E-mail" value="">
+        <input value="" type="email" name="email" id="email" placeholder="E-mail">
         <label for="">Cidade</label>
-        <input type="text" name="cidade" id="cidade" placeholder="Cidade" value="">
+        <input value="" type="text" name="cidade" id="cidade" placeholder="Cidade">
+        <br>
         <label for="">Data</label>
-        <input type="date" name="dataNascimento" id="data" placeholder="Data" value="">
+        <input value="" type="date" name="dataNascimento" id="data" placeholder="Data">
         <label class="estado" for="">Estado</label>
-        <input type="text" name="estado" id="estado" placeholder="Estado" value="">
+        <input value="" type="text" name="estado" id="estado" placeholder="Estado">
         <label class="mensagem-text-area" for="">Deixe uma mensagem para mim.</label>
         <textarea value="" name="mensagem" id="mensagem" cols="" rows="5" placeholder="Mensagem"></textarea>
-        <input class="btn btn-success botao-formulario-contato" type="submit" value="Enviar">
+        <input id="btn" class="btn btn-success botao-formulario-contato" type="submit" value="Enviar">
       </form>
     </section>
 
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <button id="close" class="close">
+          <p>X</p>
+        </button>
+        <p class="modal-text">Obrigado, retornaremos em breve!</p>
+      </div>
+      <img src="/public/images/rostinho-feliz-removebg-preview.png" alt="">
+    </div>
+
     <div class="clear"></div>
 
-    <!-- espaço reservado para uma modal -->
-
-    <div class="clear"></div>
-
+    <!-- footer -->
     <footer>
       <div class="NandoDev">
         <span class="spanNandoDev">© 2022 Company Nando<b>Dev</b></span>
@@ -406,7 +421,7 @@
 
   </main>
 
-
+  <script src="index.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>

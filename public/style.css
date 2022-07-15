@@ -399,15 +399,45 @@ form.formulario-contato-form label {
 /* modal do formulário de contato */
 
 .modal {
-  display: block;
+  border-radius: 10px;
+  margin-left: 35%;
+  margin-right: 35%;
+  width: 400px;
+  height: 400px;
+  background-color: #66206f;
   margin-top: 100px;
-  background-color: white;
+  display: none;
 }
-
-button.botaoEnviarModal {
+div.modal-content {
+  background-color: #f6f6f6;
+  border-radius: 5px;
+}
+button.close {
   width: 100%;
+  height: 50px;
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: -1%;
 }
-
+button.close p {
+  padding: 2px 2px;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  margin-left: 85%;
+  border-radius: 5px;
+}
+p.modal-text {
+  color: black;
+  font-size: 25px;
+  text-align: center;
+}
+.modal img {
+  width: 50%;
+  height: 50%;
+  margin-top: 10%;
+  margin-left: 30%;
+}
 
 /* Footer */
 
@@ -476,6 +506,10 @@ div.div-card-texto-sobre {
   h5.card-title {
     font-size: 30px;
   }
+  form.form-inline {
+    display: block;
+    width: 400px;
+   }
   div.div-card-texto {
     width: 400px;
     font-size: 15px;
@@ -493,7 +527,7 @@ div.div-card-texto-sobre {
     font-size: 14px;
   }
   div.NandoDev span {
-    font-size: 16px;
+    font-size: 20px;
     width: 100%;
     float: left;
   }
@@ -525,6 +559,53 @@ div.div-card-texto-sobre {
   form.formulario-contato-form {
     width: 70%;
   }
+  form.form-inline {
+    display: block;
+    width: 400px;
+   }
+ }
+
+ @media screen and (max-width: 575px) {
+  footer {
+    margin-top: -50px;
+    width: 100%;
+   }
+   div.sobre-mim {
+    width: 96%;
+    font-size: 10px;
+   }
+   form.form-inline {
+    display: block;
+    width: 300px;
+   }
+    div.NandoDev {
+      font-size: 20px;
+     width: 100%;
+     margin-left: 0;
+     text-align: center;
+    }
+   div.NandoDev span{
+    font-size: 20px;
+    width: 100%;
+   }
+   ul.ul-icones {
+    width: 100%;
+    padding: 10px 10%;
+    height: 90px;
+   }  
+    li.li-icones {
+      margin-top: -50px;
+     display: inline-block;
+    width: 10px;
+   }
+    a.a-icones {
+      display: block;
+      font-size: 12px;
+      margin: 10px -15px;
+    }
+    a.a-icones small {
+      margin: 10px -6px ;
+    }
  }
 
  @media screen and (max-width: 500px) {
@@ -533,26 +614,127 @@ main.main-formulario-contato {
 }
 section.formulario-contato {
   width: 100%;
+  margin-top: -30px;
 }
 form.formulario-contato-form {
   width: 90%;
+  border : 1px solid rgb(189, 187, 187);
 }
 h1.chamada-formulario-contato {
-  font-size: 30px;
-}
-input.botao-formulario-contato {
-  font-size: 15px;
-  margin-top: 20px;
+  margin-top: -10px;
+  font-size: 20px;
 }
 div.div-card-texto {
+  margin-top: 20px;
   font-size: 15px;
+  width: 100%;
 }
 div.div-card-texto-sobre {
   font-size: 15px;
 }
-h5.card-title-sobre {
+h5.card-title {
+  margin-top: 70px;
+  width: 180px;
+  font-size: 13px;
+}
+ small.small-developer {
   font-size: 20px;
+ }
+ strong.strong-developer {
+  font-size: 20px;
+ }
+ img.botao-menu-mobile {
+  width: 100px;
+  height: 40px;
+ }
+ img.imagem-home-principal {
+ margin-top: 0;
+ height: 300px;
+ }
+strong em {
+  font-size: 10px;
 }
- 
-
+button.botao-titulo-card {
+  font-size: 10px;
 }
+div.divisoria {
+  margin-top: -10px;
+  margin-bottom: -40px;
+}
+div.divisoria h1 {
+  font-size: 15px;
+}
+div#sobre-mim {
+  margin-bottom: 20px;
+ }
+ h1.widget-title {
+  font-size: 18px;
+ }
+ p.conect-mensagem {
+  font-size: 12px;
+ }
+ form.formulario-contato-form label {
+  font-size: 12px;
+ }
+ form.formulario-contato-form input {
+  font-size: 12px;
+  height: 15px;
+  margin-bottom: 5px;
+  border : 1px solid rgb(189, 187, 187);
+ }
+ form.formulario-contato-form input[type='date']  {
+  font-size: 8px;
+ display: block;
+ }
+ form.formulario-contato-form input[id='estado'] {
+  font-size: 8px;
+  display: block;
+ }
+ form.formulario-contato-form label.estado{
+  margin-left: 0;
+ }
+ input#btn {
+  font-size: 15px;
+  height: 40px;
+ }
+ textarea#mensagem {
+  font-size: 12px;
+  height: 100px;
+  border : 1px solid rgb(189, 187, 187);
+ }
+ footer {
+  margin-top: -50px;
+  width: 100%;
+ }
+  div.NandoDev {
+   width: 100%;
+   margin-left: 0;
+   text-align: center;
+  }
+ div.NandoDev span{
+  font-size: 14px;
+  width: 100%;
+ }
+ span.spanNandoDev {
+  width: 100%;
+  margin-right: 10px;
+ }
+ ul.ul-icones {
+  width: 100%;
+  padding: 10px 10%;
+  height: 90px;
+ }  
+  li.li-icones {
+    margin-top: -50px;
+   display: inline-block;
+  width: 10px;
+ }
+  a.a-icones {
+    display: block;
+    font-size: 12px;
+    margin: 10px -15px;
+  }
+  a.a-icones small {
+    margin: 10px -6px ;
+  }
+ }
