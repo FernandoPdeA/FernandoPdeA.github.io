@@ -150,9 +150,10 @@ img.img-sobre {
 
 /* divisória */
 div.divisoria {
+  margin: auto;
   padding: 20px 0;
   text-align: center;
-  width: 100%;
+  width: 80%;
   background-color: rgba(0,0,0,0.10);
 }
 div.divisoria h1 {
@@ -271,23 +272,8 @@ section.portfolio-section {
 .titulo-modelo-site {
   text-align: center;
   margin-top: 20px;
-  text-decoration: none;
-  transition: 0.5s;
-}
-.titulo-modelo-site a {
-  width: 100%;
+  color: #66206f;
   font-size: 30px;
-  color: #ff9f00;
-  text-decoration: none;
-  transition: all 0.5s;
-}
-
-.titulo-modelo-site a:hover {
-  padding: 5px 5px;
-  background-color: #66206f;
-  color: white;
-  transition-timing-function: ease-in-out;
-  border-radius: 5px;
 }
 
 .comentario-titulo-modelo-site {
@@ -308,7 +294,7 @@ section.formulario-contato {
 }
 
 form.formulario-contato-form {
-  border-radius: 5px;
+  border-radius: 2px;
   width: 50%;
   margin: 0 auto;
   padding: 20px 2%;
@@ -328,7 +314,7 @@ form.formulario-contato-form input {
   width: 100%;
   padding: 10px;
   border: 1px solid rgb(153, 152, 152);
-  border-radius: 5px;
+  border-radius: 2px;
   margin-bottom: 30px;
   outline: none;
 }
@@ -344,7 +330,7 @@ form.formulario-contato-form label {
   padding-top: 5px;
   margin-top: 20px;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 2px;
  }
 
 #estado {
@@ -532,9 +518,6 @@ div.div-card-texto-sobre {
     height: 100%;
     margin: 20px auto;
   }
-  h4.titulo-modelo-site a {
-    font-size: 20px;
-  }
   form.formulario-contato-form {
     width: 90%;
   }
@@ -562,11 +545,17 @@ div.div-card-texto-sobre {
     display: block;
     width: 300px;
    }
+   .titulo-modelo-site {
+    font-size: 20px;
+   }
  }
 
  @media screen and (max-width: 500px) {
 main.main-formulario-contato {
   width: 100%;
+}
+.titulo-modelo-site {
+  font-size: 17px;
 }
 section.formulario-contato {
   width: 100%;
@@ -624,17 +613,22 @@ button.botao-titulo-card {
   font-size: 10px;
 }
 div.divisoria {
+  width: 90%;
   margin-top: -10px;
-  margin-bottom: -40px;
+  margin-bottom: 10px;
 }
 div.divisoria h1 {
   font-size: 15px;
 }
 div#sobre-mim {
+  margin-top: 10px;
   margin-bottom: 20px;
  }
  h1.widget-title {
   font-size: 18px;
+ }
+ div.carousel-item {
+  margin-top: -50px;
  }
  p.conect-mensagem {
   font-size: 12px;
@@ -681,7 +675,7 @@ div#sobre-mim {
   font-size: 15px;
  } 
  a.controles-troca-foto-carousel {
-  margin-top: 69%;
+  margin-top: 52%;
   height: 30px;
   width: 30px;
  }
