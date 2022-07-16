@@ -17,7 +17,7 @@ window.onload = function () {
     if (validaEmail(email.value)) {
       modal.style.display = "block";
     } else {
-      alert("Preencha todos os campos corretamente!");
+      alert("Preencha todos os campos corretamente, por favor!");
     }
 
     closed.onclick = function (e) {
