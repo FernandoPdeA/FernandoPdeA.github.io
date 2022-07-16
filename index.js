@@ -2,6 +2,11 @@
 
 window.onload = function () {
 
+  function validaEmail(email) {
+    var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    return regex.test(email);
+  }
+
   var modal = document.querySelector('#modal');
   var btn = document.querySelector("#btn");
   var closed = document.querySelector("#close");
@@ -9,7 +14,7 @@ window.onload = function () {
 
   btn.onclick = function (e) {
     e.preventDefault();
-    if (email.value != "" && email.value != null) {
+    if (validaEmail(email.value)) {
       modal.style.display = "block";
     } else {
       alert("Preencha todos os campos corretamente!");
