@@ -406,7 +406,7 @@ form.formulario-contato-form label {
   height: 400px;
   background-color: #66206f;
   margin-top: 100px;
-  display: none;
+  display: block;
 }
 div.modal-content {
   background-color: #f6f6f6;
@@ -573,6 +573,9 @@ section.formulario-contato {
   margin-top: -30px;
 }
 form.formulario-contato-form {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  border-radius: 1px;
   width: 90%;
   border : 1px solid rgb(189, 187, 187);
 }
@@ -640,17 +643,18 @@ div#sobre-mim {
   font-size: 12px;
  }
  form.formulario-contato-form input {
+  border-radius: 1px;
   font-size: 12px;
   height: 15px;
   margin-bottom: 5px;
   border : 1px solid rgb(189, 187, 187);
  }
  form.formulario-contato-form input[type='date']  {
-  font-size: 8px;
+  font-size: 10px;
  display: block;
  }
  form.formulario-contato-form input[id='estado'] {
-  font-size: 8px;
+  font-size: 12px;
   display: block;
  }
  form.formulario-contato-form label.estado{
@@ -661,6 +665,7 @@ div#sobre-mim {
   height: 40px;
  }
  textarea#mensagem {
+  border-radius: 1px;
   font-size: 12px;
   height: 100px;
   border : 1px solid rgb(189, 187, 187);
@@ -680,5 +685,19 @@ div#sobre-mim {
   height: 30px;
   width: 30px;
  }
-  
+  div.modal {
+    border-radius: 1px;
+    width: 300px;
+    height: 350px;
+    background-color: rgba(0,0,0,0.9);
+    position: fixed;
+    top: 0;
+    left: -98px;
+    z-index: 1;
+    overflow: hidden;
+    display: block;
+  }
+  p.modal-text {
+    font-size: 16px;
+  }
 }
