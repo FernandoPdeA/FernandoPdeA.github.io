@@ -590,8 +590,8 @@ div.div-card-texto-sobre {
 }
 h5.card-title {
   margin-top: 70px;
-  width: 180px;
-  font-size: 13px;
+  width: 190px;
+  font-size: 10px;
 }
  small.small-developer {
   font-size: 20px;
@@ -607,8 +607,15 @@ h5.card-title {
  margin-top: 0;
  height: 300px;
  }
+ b {
+  color : #66206f;
+ }
 strong em {
   font-size: 10px;
+}
+strong.um-pouco-sobre-mim {
+  font-size: 8px;
+  color : #66206f;
 }
 button.botao-titulo-card {
   font-size: 10px;
@@ -659,8 +666,7 @@ div#sobre-mim {
   border : 1px solid rgb(189, 187, 187);
  }
  a.a-icones {
-  padding: 5px;
-  font-size: 18px;
+  font-size: 15px;
  }
  svg {
   width: 12px;
@@ -669,4 +675,10 @@ div#sobre-mim {
  span.spanNandoDev {
   font-size: 15px;
  } 
+ a.controles-troca-foto-carousel {
+  margin-top: 69%;
+  height: 30px;
+  width: 30px;
  }
+  
+}
