@@ -65,9 +65,8 @@ window.onload = function () {
     e.preventDefault();
     modal.style.display = "none";
 
-    var link = "mailto:me@exemplo.com"
-      + "?cc=myCCaddress@exemplo.com"
-      + "&subject=" + escape("This is my subject")
+    var link = "mailto:pupygreen@gmail.com"
+      + "&subject=" + escape("Contato através do seu Portfólio")
       + "&body=" + escape(document.getElementById('mensagem').value);
     window.location.href = link;
     // window.location.reload();
