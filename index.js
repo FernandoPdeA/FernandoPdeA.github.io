@@ -1,7 +1,7 @@
 //Abria a modal usando javascript logo após o cadastro de usuário
 
 window.onload = function () {
-
+  var form = document.getElementById('contato');
   var botao_pesquisa = document.getElementById("pesquisa");
   var menu_li_a = document.querySelectorAll('.menu li a');
   var menu = document.getElementById("menu");
@@ -64,7 +64,15 @@ window.onload = function () {
   closed.onclick = function (e) {
     e.preventDefault();
     modal.style.display = "none";
-    window.location.reload();
+
+    var link = "mailto:me@exemplo.com"
+      + "?cc=myCCaddress@exemplo.com"
+      + "&subject=" + escape("This is my subject")
+      + "&body=" + escape(document.getElementById('mensagem').value);
+    window.location.href = link;
+    // window.location.reload();
   }
+
+
 
 }
