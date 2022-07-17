@@ -79,6 +79,7 @@ window.onload = function () {
     mensagem.value = "";
     email.value = "";
     cidade.value = "";
+
   }
 
 
