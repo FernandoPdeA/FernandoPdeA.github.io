@@ -56,14 +56,6 @@ window.onload = function () {
   closed.onclick = function (e) {
     e.preventDefault();
     modal.style.display = "none";
-
-    // window.open(link, '_blank');
-
-    //Limpa os campos do formulário
-    // nome.value = "";
-    // mensagem.value = "";
-    // email.value = "";
-    // cidade.value = "";
   }
 
 
