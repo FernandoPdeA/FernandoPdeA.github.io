@@ -44,8 +44,25 @@
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-          <input class="form-pesquisar mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+          <input value="" id="input_pesquisa" class="form-pesquisar mr-sm-2" type="search" placeholder="Pesquisar"
+            aria-label="Pesquisar" title="Faça sua pesquisa">
+          <button id="pesquisa" class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+          <ul class="menu" id="menu">
+            <li><a href="#Sobre-mim">Sobre-mim</a></li>
+            <li><a href="#Slides">Slides</a></li>
+            <li><a href="#HTML">HTML</a></li>
+            <li><a href="#CSS">CSS</a></li>
+            <li><a href="#JavaScript">JavasCript</a></li>
+            <li><a href="#Nodejs">NodeJs</a></li>
+            <li><a href="#Bootstrap">Bootstrap</a></li>
+            <li><a href="#ReactJs">ReactJs</a></li>
+            <li><a href="#MongoDB">MongoDB</a></li>
+            <li><a href="#Mysql">Mysql</a></li>
+            <li><a href="#Sites">Sites</a></li>
+            <li><a href="#Contato">Contato</a></li>
+            <li><a href="#Redes-sociais">Redes-Sociais</a></li>
+          </ul>
+
         </form>
       </div>
     </nav>
@@ -70,7 +87,7 @@
     </div>
     <!-- /imagem principal -->
 
-    <div class="clear"></div>
+    <div id="Sobre-mim" class="clear"></div>
 
     <br>
     <div class="divisoria">
@@ -80,7 +97,7 @@
     <div class="clear"></div>
 
     <!-- Sobre mim -->
-    <div id="sobre-mim" class="container sobre-mim">
+    <div class="container sobre-mim">
       <div class="row">
         <div class="col align-self-start">
           <img class="img-sobre" src="/public/images/Fernando.jpg">
@@ -114,7 +131,7 @@
       <h1>Alguns modelos de sites replicados.</h1>
     </div>
 
-    <div class="clear"></div>
+    <div id="Slides" class="clear"></div>
 
     <!-- carousel -->
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="0">
@@ -148,7 +165,8 @@
     </div>
     <!-- /carousel -->
 
-    <div class="clear"></div>
+    <div id="skills" class="clear"></div>
+
     <br>
     <div class="divisoria">
       <div class="row">
@@ -169,13 +187,13 @@
     <div class="clear"></div>
 
     <!-- alguns dos meus projetos -->
-    <section id="skills" class="section-module ">
+    <section class="section-module ">
       <div class="container">
 
         <!-- Exibição dos projetos -->
         <div class="row">
           <div class="col-md-6 col-sm-6 col-xs-12 quadradinhos-imagem-texto">
-            <div class="a-quadradinhos">
+            <div id="HTML" class="a-quadradinhos">
               <img src="/public/images/html-removebg-preview.png" alt=" Imagem do ícone HTML">
               <div>
                 <h4 class=" titulo-quadradinhos"><a href="https://www.w3schools.com/html/default.asp"
@@ -188,7 +206,7 @@
             </div>
           </div>
           <div class="col-md-6 col-sm-6 col-xs-12 quadradinhos-imagem-texto">
-            <div class="a-quadradinhos">
+            <div id="CSS" class="a-quadradinhos">
               <img src="/public/images/css-removebg-preview.png" alt="">
               <div>
                 <h4 class=" titulo-quadradinhos"><a href="https://www.w3schools.com/css/default.asp"
@@ -201,7 +219,7 @@
             </div>
           </div>
           <div class="col-md-6 col-sm-6 col-xs-12 quadradinhos-imagem-texto">
-            <div class="a-quadradinhos">
+            <div id="JavaScript" class="a-quadradinhos">
               <img src="/public/images/javscript-removebg-preview.png" alt="">
               <div>
                 <h4 class=" titulo-quadradinhos"><a href="https://www.w3schools.com/js/default.asp"
@@ -213,7 +231,7 @@
             </div>
           </div>
           <div class="col-md-6 col-sm-6 col-xs-12 quadradinhos-imagem-texto">
-            <div class="a-quadradinhos">
+            <div id="NodeJs" class="a-quadradinhos">
               <img src="/public/images/nodejs-removebg-preview.png" alt="">
               <div>
                 <h4 class="titulo-quadradinhos"><a href="https://nodejs.org/dist/latest-v16.x/docs/api/"
@@ -226,7 +244,7 @@
             </div>
           </div>
           <div class="col-md-6 col-sm-6 col-xs-12 quadradinhos-imagem-texto">
-            <div class="a-quadradinhos">
+            <div id="Bootstrap" class="a-quadradinhos">
               <img src="/public/images/bootstrap2-removebg-preview.png" alt="">
               <div>
                 <h4 class="titulo-quadradinhos"><a
@@ -241,7 +259,7 @@
             </div>
           </div>
           <div class="col-md-6 col-sm-6 col-xs-12 quadradinhos-imagem-texto">
-            <div class="a-quadradinhos">
+            <div id="ReactJs" class="a-quadradinhos">
               <img src="/public/images/react2-removebg-preview.png" alt="">
               <div>
                 <h4 class="titulo-quadradinhos"><a href="https://pt-br.reactjs.org/" target="_blank">ReactJs</a></h4>
@@ -253,7 +271,7 @@
             </div>
           </div>
           <div class="col-md-6 col-sm-6 col-xs-12 quadradinhos-imagem-texto">
-            <div class="a-quadradinhos">
+            <div id="MongoDB" class="a-quadradinhos">
               <img src="/public/images/mongodb-removebg-preview.png" alt="">
               <div>
                 <h4 class="titulo-quadradinhos"><a href="https://www.mongodb.com/pt-br" target="_blank">MongoDB</a></h4>
@@ -265,7 +283,7 @@
             </div>
           </div>
           <div class="col-md-6 col-sm-6 col-xs-12 quadradinhos-imagem-texto">
-            <div class="a-quadradinhos">
+            <div id="Mysql" class="a-quadradinhos">
               <img src="/public/images/mysql2-removebg-preview (2).png" alt="">
               <div>
                 <h4 class="titulo-quadradinhos"><a href="https://www.mysql.com/" target="_blank">Mysql</a></h4>
@@ -284,7 +302,7 @@
     <div class="clear"></div>
 
     <!-- divisória -->
-    <div class="divisoria">
+    <div id="Sites" class="divisoria">
       <div id="projetos" class="row">
         <!--  Title -->
         <div class="col-md-12">
@@ -348,7 +366,7 @@
 
     <!-- formulário -->
     <section class="formulario-contato">
-      <form class="formulario-contato-form" id="contato">
+      <form class="formulario-contato-form" id="Contato">
         <label for="">Nome</label>
         <input value="" type="text" name="nome" id="nome" placeholder="Nome">
         <label for="">E-mail</label>
@@ -414,7 +432,7 @@
               <small class="">Linkedin</small>
             </a>
           </li>
-          <li class="li-icones">
+          <li id="Redes-Sociais" class="li-icones">
             <a class="a-icones" href="https://www.instagram.com/fernando_pereira_andrade/" target="_blank"
               rel="noopener">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram"
