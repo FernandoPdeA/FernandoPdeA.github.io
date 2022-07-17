@@ -66,11 +66,19 @@ window.onload = function () {
     modal.style.display = "none";
 
     var email = `pupygreen@gmail.com`;
+    var assunto = `Contato sobre o portfolio.`;
     var nome = document.querySelector("#nome");
+    var cidade = document.querySelector("#cidade");
     var mensagem = document.querySelector("#mensagem");
-    var link = `mailto:${email}?subject=Olá, me chamo - ${nome.value}&body=${mensagem.value}`;
+    var link = `mailto:${email}?subject=Olá, me chamo ${nome.value} - Resido em ${cidade.value} - ${assunto}&body=${mensagem.value}`;
 
     window.open(link, '_blank');
+
+    //Limpa os campos do formulário
+    nome.value = "";
+    mensagem.value = "";
+    email.value = "";
+    cidade.value = "";
   }
 
 
