@@ -65,9 +65,13 @@ window.onload = function () {
     e.preventDefault();
     modal.style.display = "none";
 
-    var link = "mailto:pupygreen@gmail.com"
-      + "&subject=" + escape("Contato através do seu Portfólio")
-      + "&body=" + escape(document.getElementById('mensagem').value);
+    var email = `pupygreen@gmail.com`;
+    var nome = document.querySelector("#nome");
+    var mensagem = document.querySelector("#mensagem");
+    var link = `mailto:${email}?subject=${nome.value}&body=${mensagem.value}`;
+
+    // + "&subject=" + escape(document.getElementById('mensagem').value);
+    // + "&body=" + escape(document.getElementById('mensagem').value);
     window.location.href = link;
     // window.location.reload();
   }
