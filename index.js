@@ -68,12 +68,9 @@ window.onload = function () {
     var email = `pupygreen@gmail.com`;
     var nome = document.querySelector("#nome");
     var mensagem = document.querySelector("#mensagem");
-    var link = `mailto:${email}?subject=${nome.value}&body=${mensagem.value}`;
+    var link = `mailto:${email}?subject=Olá, me chamo - ${nome.value}&body=${mensagem.value}`;
 
-    // + "&subject=" + escape(document.getElementById('mensagem').value);
-    // + "&body=" + escape(document.getElementById('mensagem').value);
-    window.location.href = link;
-    // window.location.reload();
+    window.open(link, '_blank');
   }
 
 
