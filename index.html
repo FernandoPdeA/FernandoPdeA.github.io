@@ -428,29 +428,21 @@
 
     <!-- formulário -->
     <section class="formulario-contato">
-      <form class="formulario-contato-form" id="Contato" method="post" action="mailto: pupygreen@gmail.com"
-        enctype="multipart/form-data">
-        <label for="">Nome</label>
-        <input value="" type="text" name="nome" id="nome" placeholder="Nome">
-        <label for="">E-mail</label>
-        <input value="" type="email" name="email" id="email" placeholder="E-mail">
-        <label for="">Cidade</label>
-        <input value="" type="text" name="cidade" id="cidade" placeholder="Cidade">
-        <label class="mensagem-text-area" for="">Deixe uma mensagem para mim.</label>
-        <textarea value="" name="mensagem" id="mensagem" cols="" rows="5" placeholder="Mensagem"></textarea>
-        <input id="btn" class="btn btn-success botao-formulario-contato" type="submit" value="Enviar">
+      <form class="formulario-contato-form" id="Contato" action="https://formsubmit.co/pupygreen@gmail.com"
+        method="POST" />
+      <input type="hidden" name="_next" value="https://127.0.0.1:5500/modal.html" />
+      <input type="hidden" name="_autoresponse" value="Já recebi a sua mensagem, obrigadão!!!!">
+      <label for="">Nome</label>
+      <input value="" type="text" name="name" id="nome" placeholder="Nome">
+      <label for="">E-mail</label>
+      <input value="" type="email" name="email" id="email" placeholder="E-mail">
+      <label for="">Cidade</label>
+      <input value="" type="text" name="cidade" id="cidade" placeholder="Cidade">
+      <label class="mensagem-text-area" for="">Deixe uma mensagem para mim.</label>
+      <textarea value="" name="mensagem" id="mensagem" cols="" rows="5" placeholder="Mensagem"></textarea>
+      <input id="btn" class="btn btn-success botao-formulario-contato" type="submit" value="Enviar">
       </form>
     </section>
-
-    <div id="modal" class="modal">
-      <div class="modal-content">
-        <button type="submit" id="close" class="close">
-          <p>X</p>
-        </button>
-        <p class="modal-text">Ebaa, você é demais!!!</p>
-      </div>
-      <img src="/public/images/rostinho-feliz-removebg-preview.png" alt="">
-    </div>
 
     <div class="clear"></div>
 
