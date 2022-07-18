@@ -1,7 +1,7 @@
 //Abria a modal usando javascript logo após o cadastro de usuário
 
 window.onload = function () {
-  var form = document.getElementById('contato');
+
   var botao_pesquisa = document.getElementById("pesquisa");
   var menu_li_a = document.querySelectorAll('.menu li a');
   var menu = document.getElementById("menu");
@@ -52,36 +52,9 @@ window.onload = function () {
     return regex.test(email);
   }
 
-  btn.onclick = function (e) {
-    e.preventDefault();
-    if (validaEmail(email.value)) {
-      modal.style.display = "block";
-    } else {
-      alert("Preencha todos os campos corretamente, por favor!");
-    }
-  }
 
   closed.onclick = function (e) {
     e.preventDefault();
     modal.style.display = "none";
-
-    var email = `pupygreen@gmail.com`;
-    var assunto = `Contato sobre o portfolio.`;
-    var nome = document.querySelector("#nome");
-    var cidade = document.querySelector("#cidade");
-    var mensagem = document.querySelector("#mensagem");
-    var link = `mailto:${email}?subject=Nome = ${nome.value} / Cidade = ${cidade.value} / ${assunto}&body=${mensagem.value}`;
-
-    window.open(link, '_blank');
-
-    //Limpa os campos do formulário
-    nome.value = "";
-    mensagem.value = "";
-    email.value = "";
-    cidade.value = "";
-
   }
-
-
-
 }
