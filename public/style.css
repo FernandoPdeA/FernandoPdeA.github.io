@@ -579,7 +579,7 @@ div.div-card-texto-sobre {
     font-size: 10px;
    }
    div.modal {
-    width: 60%;
+    width: 80%;
   }
    form.form-inline {
     display: block;
@@ -720,14 +720,30 @@ div#sobre-mim {
   width: 30px;
  }
  .modal {
+  border: 1px solid rgb(189, 187, 187);
   border-radius: 10px;
   background-color: #66206f;
-  margin-top: 50vh;
-  display: none;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-  p.modal-text {
-    font-size: 12px;
+  display: block;
+  height: 60%;
+  width: 200px;
   }
+  body {
+  background-color: #66206f;
+  }
+  button.close {
+    display: block;
+    margin-top: 0;
+    right: 0;
+    width: 15%;
+    height: 100%;
+  }
+  button.close p a{
+  font-size: 30px;
+  left: -10px;
+  top: 0;
+  }
+  p.modal-text {
+    font-size: 20px;
+  }
+
 }
