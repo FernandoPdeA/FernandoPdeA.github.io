@@ -1,5 +1,3 @@
-//Abria a modal usando javascript logo após o cadastro de usuário
-
 window.onload = function () {
 
   var botao_pesquisa = document.getElementById("pesquisa");
@@ -33,9 +31,7 @@ window.onload = function () {
 
   botao_pesquisa.addEventListener("click", function (e) {
     e.preventDefault();
-    //Me levar até o id do elemento que estiver no input de pesquisa
     var elemento = document.getElementById(input_pesquisa.value);
-    //Se o elemento existir, ele me leva até ele
     if (elemento) {
       elemento.scrollIntoView({
         behavior: "smooth",
