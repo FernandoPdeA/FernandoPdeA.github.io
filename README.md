@@ -1,2 +1,1 @@
-Acessar o portfóllio através desse link =>  fernandopdea.github.io
-Meu portfólio
+Acessar o portfóllio através desse link =>  https://fernandopdea.github.io/
